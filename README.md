@@ -12,6 +12,27 @@ Quick start
 
 Clone the repo, `git clone git@github.com:windsdeng/ueditor-for-yii.git`, or [download the latest release](https://github.com/windsdeng/ueditor-for-yii/zipball/master).
 
+Usage 
+-----------
+
+把ueditor插件放到 extensions/
+在相应的Html(View) 调用
+<code>
+<?php
+    $this->widget('ext.ueditor.Ueditor',
+            array(
+                'getId'=>'Post_content',
+                'UEDITOR_HOME_URL'=>"/",
+                'options'=>'toolbars:[["fontfamily","fontsize","forecolor","bold","italic","strikethrough","|",
+"insertunorderedlist","insertorderedlist","blockquote","|",
+"link","unlink","highlightcode","|","undo","redo","source"]],
+                    wordCount:false,
+                    elementPathEnabled:false,
+                    imagePath:"/attachment/ueditor/",
+                    ',
+            ));
+?>
+</code>
 
 Bug tracker
 -----------
