@@ -18,6 +18,7 @@ Usage
 把ueditor插件放到 extensions/
 在相应的Html(View) 调用
 
+```
 <?php
     $this->widget('ext.ueditor.Ueditor',
             array(
@@ -33,7 +34,7 @@ Usage
                     ',
             ));
 ?>
-
+```
 
 Bug tracker
 -----------
